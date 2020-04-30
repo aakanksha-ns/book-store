@@ -1,0 +1,36 @@
+.info-section{
+    margin-top: 25%;
+    background-color: white;
+    padding: 50px;
+}
+
+.login-section {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.disp-flex {
+    display:flex;
+}
+
+.register-block {
+    margin-top: -20%;
+    padding-bottom: 50px;
+}
+
+.max-width-extend {
+    max-width: 90% !important;
+}
+
+.description {
+    padding:50px;
+    font-size: 1em !important;
+    line-height: 1.3em;
+    color: #000;
+    letter-spacing: 0.3px;
+}

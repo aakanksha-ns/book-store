@@ -1,0 +1,16 @@
+.chapter-logo{
+    color: #333333;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 2rem;
+    background-color: white;
+    padding: 20px;
+}
+
+.nav-item {
+    color: white;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-family: GT Walsheim Web,sans-serif;
+    transition: color 250ms ease 0s;
+    padding-right: 80px;
+}
