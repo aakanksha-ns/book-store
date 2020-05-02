@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/FooterPage.css'
+import '../styles/Footer.css'
 
-const FooterPage = () => {
+const Footer = () => {
     return (
         <footer className="section footer-classic context-dark bg-image">
             <div className="container">
@@ -42,4 +42,4 @@ const FooterPage = () => {
     );
 }
 
-export default FooterPage;
+export default Footer;

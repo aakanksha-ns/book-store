@@ -1,7 +1,3 @@
-const showShop = () => ({
-    type: "SHOP"
-});
-
 const loginStarted = () => ({
     type: "LOGIN_STARTED"
 });
@@ -15,7 +11,7 @@ const loginError = () => ({
 })
 
 
-const loginUser = (username, password) => {
+const loginUser = (username, password, ownProps) => {
     return dispatch => {
         dispatch(loginStarted());
         fetch('https://pika-book-store.herokuapp.com/sign_in?' + new URLSearchParams({
@@ -25,9 +21,8 @@ const loginUser = (username, password) => {
             resp => {
                 resp.json().then(body => {
                     dispatch(loginCompleted());
-                    if (body.user_added) {
-                        dispatch(showShop());
-
+                    if (body.signed_in) {
+                        ownProps.history.push("/shop")
                     } else {
                         dispatch(loginError());
                     }

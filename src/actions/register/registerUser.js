@@ -1,7 +1,3 @@
-const showLoginPage = () => ({
-    type: "SIGN_IN"
-});
-
 const registerStarted = () => ({
     type: "REGISTER_STARTED"
 });
@@ -15,7 +11,7 @@ const registerError = () => ({
 })
 
 
-const registerUser = (username, email, password) => {
+const registerUser = (username, email, password, ownProps) => {
     return dispatch => {
         dispatch(registerStarted());
         fetch('https://pika-book-store.herokuapp.com/register?' + new URLSearchParams({
@@ -27,8 +23,7 @@ const registerUser = (username, email, password) => {
                 resp.json().then(body => {
                     dispatch(registerCompleted());
                     if (body.user_added) {
-                        dispatch(showLoginPage());
-
+                        ownProps.history.push('/login');
                     } else {
                         dispatch(registerError());
                     }

@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
-import Register from "../components/Register";
+import Register from "../components/register/Register";
 import registerUser from "../actions/register/registerUser";
 import handleRegisterChange from "../actions/register/handleRegisterChange";
+import { withRouter } from 'react-router-dom';
 
 
 const mapStateToRegisterProps = state => {
@@ -12,10 +13,10 @@ const mapStateToRegisterProps = state => {
     };
 };
 
-const mapDispatchToRegisterProps = dispatch => {
+const mapDispatchToRegisterProps = (dispatch, ownProps) => {
     return {
         registerUser: (email, username, password) => {
-            dispatch(registerUser(email, username, password));
+            dispatch(registerUser(email, username, password, ownProps));
         },
         handleRegisterChange: (event, stateName) => {
             dispatch(handleRegisterChange(event, stateName));
@@ -23,8 +24,8 @@ const mapDispatchToRegisterProps = dispatch => {
     };
 };
 
-const RegisterForm = connect(mapStateToRegisterProps,
+const RegisterForm = withRouter(connect(mapStateToRegisterProps,
     mapDispatchToRegisterProps
-)(Register);
+)(Register));
 
 export default RegisterForm;

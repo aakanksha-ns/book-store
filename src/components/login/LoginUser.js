@@ -1,5 +1,4 @@
 import React from "react";
-import '../styles/LoginUser.css';
 import $ from 'jquery';
 
 
@@ -50,10 +49,10 @@ const Login = ({ username, password, loginUser, handleLoginChange }) => {
                                             } else {
                                                 formElement.reportValidity();
                                             }
-                                        }}>Register</button>
+                                        }}>Login</button>
                                 </div>
                                 <div className="login-register">
-                                    Not a member? <a href="#">Sign Up</a>
+                                    Not a member? <a href="/">Sign Up</a>
                                 </div>
                             </form>
                         </div>

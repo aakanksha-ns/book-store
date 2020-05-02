@@ -1,5 +1,4 @@
 import React from "react";
-import '../styles/Register.css';
 import $ from 'jquery';
 
 const Register = ({ email, username, password, registerUser, handleRegisterChange }) => {
@@ -78,7 +77,7 @@ const Register = ({ email, username, password, registerUser, handleRegisterChang
                                         }}>Register</button>
                                 </div>
                                 <div className="login-register">
-                                    Already a member? <a href="#">Login</a>
+                                    Already a member? <a href="/login">Login</a>
                                 </div>
                             </form>
                         </div>
