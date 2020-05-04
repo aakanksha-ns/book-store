@@ -4,6 +4,13 @@
     padding: 50px;
 }
 
+
+@media (max-width: 450px) {
+    .info-section{
+        padding: 0px;
+    }
+}
+
 .login-section {
     margin-top: 15%;
     margin-bottom: 15%;
@@ -21,6 +28,12 @@
 .register-block {
     margin-top: -25%;
     padding-bottom: 50px;
+}
+
+@media (max-width: 450px) {
+    .register-block {
+        margin-top: 0px;
+    }
 }
 
 .max-width-extend {
@@ -48,3 +61,4 @@
     display: flex;
     justify-content: center;
 }
+

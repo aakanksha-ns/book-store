@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Login from "../components/login/LoginUser";
+import Login from "../components/LoginUser";
 import loginUser from "../actions/login/loginUser";
 import handleLoginChange from "../actions/login/handleLoginChange";
 import { withRouter } from 'react-router-dom';
@@ -8,7 +8,8 @@ import { withRouter } from 'react-router-dom';
 const mapStateToLoginProps = state => {
     return {
         username: state.loginUser['login_username'],
-        password: state.loginUser['login_password']
+        password: state.loginUser['login_password'],
+        login_started: state.loginUser['login_started']
     };
 };
 
@@ -23,8 +24,8 @@ const mapDispatchToLoginProps = (dispatch, ownProps) => {
     };
 };
 
-const LoginForm = withRouter(connect(mapStateToLoginProps,
+const LoginPage = withRouter(connect(mapStateToLoginProps,
     mapDispatchToLoginProps
 )(Login));
 
-export default LoginForm;
+export default LoginPage;

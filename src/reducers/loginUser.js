@@ -31,7 +31,8 @@ const loginUser = (state = {
         case "LOGIN_ERROR":
             return {
                 ...state,
-                login_error: true
+                login_error: true,
+                login_started: false
             };
 
         case "LOGIN_COMPLETED":

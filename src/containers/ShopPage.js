@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import ShopPage from "../components/shop/ShopPage";
+import ShopPage from "../components/ShopPage";
 import fetchBooks from "../actions/shop/fetchBooks";
 import { withRouter } from 'react-router-dom';
 

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import '../../styles/ShopPage.css';
+import '../styles/ShopPage.css';
 import { Card, Paper, Grid, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
+import Spinner from "./Spinner";
+
 
 
 class ShopPage extends Component {
@@ -11,14 +13,12 @@ class ShopPage extends Component {
     render() {
         return this.props.fetch_completed
             ?
-
-            <Paper className="books-paper">
+            <div className="books-paper">
                 <Grid container spacing={9} justify="space-evenly" alignItems="center">
                     {this.props.books.map((book) => {
                         return (
                             <Grid item key={book.book_title}>
                                 <Card>
-
                                     <CardMedia
                                         className="card-media"
                                         image={book.image_url}
@@ -41,8 +41,9 @@ class ShopPage extends Component {
                         )
                     })}
                 </Grid>
-            </Paper>
-            : <div>not ready</div>
+            </div>
+
+            : <Spinner />
     }
 }
 

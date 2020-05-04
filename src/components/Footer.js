@@ -19,22 +19,22 @@ const Footer = () => {
                     </div>
                     <div className="col-md-8 chapter-desc">
                         <div className="row">
-                            <div class="col-md-4 col-sm-4 col-xs-6">
-                                <ul class="fh5co-footer-links">
+                            <div className="col-md-4 col-sm-4 col-xs-6">
+                                <ul className="fh5co-footer-links">
                                     <h3>Address</h3>
                                     <dd>Chapter Book Store, San Francisco, US</dd>
                                 </ul>
                             </div>
 
-                            <div class="col-md-4 col-sm-4 col-xs-6">
-                                <ul class="fh5co-footer-links">
+                            <div className="col-md-4 col-sm-4 col-xs-6">
+                                <ul className="fh5co-footer-links">
                                     <h3>Email</h3>
                                     <dd><a href="mailto:#" className="footer-link">chapter_store@chapterSF.com</a></dd>
                                 </ul>
                             </div>
 
-                            <div class="col-md-4 col-sm-4 col-xs-6">
-                                <ul class="fh5co-footer-links">
+                            <div className="col-md-4 col-sm-4 col-xs-6">
+                                <ul className="fh5co-footer-links">
                                     <h3>Links</h3>
                                     <li><a href="#" className="footer-link">About</a></li>
                                     <li><a href="#" className="footer-link">Projects</a></li>

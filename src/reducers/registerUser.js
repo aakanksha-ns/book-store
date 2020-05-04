@@ -43,7 +43,8 @@ const registerUser = (state = {
         case "REGISTER_ERROR":
             return {
                 ...state,
-                register_error: true
+                register_error: true,
+                register_started: false
             };
 
         case "REGISTER_COMPLETED":

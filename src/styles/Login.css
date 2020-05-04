@@ -16,7 +16,7 @@
     }
 }
 
-.register-header {
+.login-header {
     margin-bottom: 15px;
     font-weight: bold;
     font-size: 20px;
@@ -33,6 +33,6 @@
     justify-content: center;
 }
 
-.register-button {
+.login-button {
     width: 60%;
 }

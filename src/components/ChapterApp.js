@@ -1,8 +1,8 @@
 import React from "react";
 import NavigationBar from "./NavigationBar";
 import Footer from "./Footer";
-import LandingPage from "./register/LandingPage";
-import LoginPage from "./login/LoginPage";
+import RegisterPage from "../containers/Register";
+import LoginPage from "../containers/Login";
 import ShopPage from "../containers/ShopPage";
 import '../styles/ChapterApp.css';
 import {
@@ -19,7 +19,7 @@ const ChapterApp = () => {
             </div>
 
             <Switch>
-                <Route path="/" exact component={LandingPage} />
+                <Route path="/" exact component={RegisterPage} />
                 <Route path="/login" exact component={LoginPage} />
                 <Route path="/shop" exact component={ShopPage} />
             </Switch>
