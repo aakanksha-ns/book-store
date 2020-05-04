@@ -1,6 +1,7 @@
 import React from "react";
 import '../../styles/ChapterApp.css'
 import RegisterForm from "../../containers/Register";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
     return (
@@ -17,6 +18,11 @@ const LandingPage = () => {
                             <br />
                     Thank you for supporting these lofty goals. Your choice sustains a family business with over 500 local booksellers, and allows us to follow our passion for getting the right books into the right hands, 365 days a year.
                 </div>
+
+                        <div className="row center-div">
+                            <p> <Link to="/shop" className="btn btn-primary shopping-button">Start Shopping</Link></p>
+                        </div>
+
                     </div>
                     <div className="col-md-5 register-block">
                         <RegisterForm />

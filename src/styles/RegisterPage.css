@@ -1,0 +1,29 @@
+.card-radius {
+    border-radius: 1.5rem;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    margin: 40px;
+    padding: 20px;
+}
+
+.register-header {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    opacity: 100%;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.register-button {
+    width: 60%;
+}

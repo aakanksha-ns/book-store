@@ -1,0 +1,55 @@
+.bg-white {
+    background-color: white;
+}
+
+.max-width-extend {
+    max-width: 100% !important;
+}
+
+.card-width {
+    width: 18rem;
+}
+
+.projects-component{
+    margin-top: 130px;
+    padding: 20px 50px 20px 50px;
+    background-color: black;
+}
+
+.card-media{
+    height: 140px;
+}
+
+.card-content {
+    height: 250px;
+    width: 345px;
+}
+
+@media (max-width: 450px) {
+    .projects-component{
+        margin-top: 130px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .card-content {
+        height: 200px;
+        max-width: 345px;
+    }
+    .projects-paper{
+        box-shadow: none !important;
+    }
+}
+
+.proj-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.add-cart{
+    font-weight: bold !important;
+}
+
+.books-paper {
+    padding: 40px;
+    margin: 40px;
+}

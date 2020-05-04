@@ -19,7 +19,7 @@
 }
 
 .register-block {
-    margin-top: -20%;
+    margin-top: -25%;
     padding-bottom: 50px;
 }
 
@@ -33,4 +33,18 @@
     line-height: 1.3em;
     color: #000;
     letter-spacing: 0.3px;
+}
+
+.shopping-button {
+    width: 250px;
+    padding: 15px;
+    border-radius: 0.85rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
 }

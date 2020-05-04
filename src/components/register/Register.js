@@ -1,13 +1,15 @@
 import React from "react";
 import $ from 'jquery';
+import { Link } from "react-router-dom";
+import '../../styles/RegisterPage.css';
 
 const Register = ({ email, username, password, registerUser, handleRegisterChange }) => {
     return (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-12">
-                    <div className="card">
-                        <div className="card-header">Register</div>
+                    <div className="card card-radius">
+                        <div className="card-header register-header">Register</div>
                         <div className="card-body">
                             <form className="form-horizontal" >
                                 <div className="form-group">
@@ -64,8 +66,8 @@ const Register = ({ email, username, password, registerUser, handleRegisterChang
                                         </div>
                                     </div>
                                 </div>
-                                <div className="form-group">
-                                    <button className="btn btn-primary btn-lg btn-block login-button"
+                                <div className="form-group center-div">
+                                    <button className="btn btn-primary btn-lg btn-block register-button"
                                         onClick={e => {
                                             e.preventDefault();
                                             var formElement = $("form")[0];
@@ -77,7 +79,7 @@ const Register = ({ email, username, password, registerUser, handleRegisterChang
                                         }}>Register</button>
                                 </div>
                                 <div className="login-register">
-                                    Already a member? <a href="/login">Login</a>
+                                    Already a member? <Link to="/login">Sign In</Link>
                                 </div>
                             </form>
                         </div>

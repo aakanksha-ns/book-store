@@ -1,5 +1,6 @@
 import React from "react";
 import $ from 'jquery';
+import { Link } from "react-router-dom";
 
 
 const Login = ({ username, password, loginUser, handleLoginChange }) => {
@@ -52,7 +53,7 @@ const Login = ({ username, password, loginUser, handleLoginChange }) => {
                                         }}>Login</button>
                                 </div>
                                 <div className="login-register">
-                                    Not a member? <a href="/">Sign Up</a>
+                                    Not a member? <Link to="/">Sign Up</Link>
                                 </div>
                             </form>
                         </div>
