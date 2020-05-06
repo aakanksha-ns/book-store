@@ -8,7 +8,12 @@ const loginCompleted = () => ({
 
 const loginError = () => ({
     type: "LOGIN_ERROR"
-})
+});
+
+const updateUser = (username) => ({
+    type: "UPDATE_USER",
+    username: username
+});
 
 
 const loginUser = (username, password, ownProps) => {
@@ -20,6 +25,7 @@ const loginUser = (username, password, ownProps) => {
         })).then(
             resp => {
                 resp.json().then(body => {
+                    dispatch(updateUser(username));
                     dispatch(loginCompleted());
                     if (body.signed_in) {
                         ownProps.history.push("/shop")

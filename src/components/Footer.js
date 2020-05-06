@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-
         <footer id="fh5co-footer" className="fh5co-bg" role="contentinfo">
             <div className="overlay"></div>
             <div className="container">

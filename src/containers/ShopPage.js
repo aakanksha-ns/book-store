@@ -1,6 +1,10 @@
 import { connect } from "react-redux";
 import ShopPage from "../components/ShopPage";
 import fetchBooks from "../actions/shop/fetchBooks";
+import removeFromCart from "../actions/shop/removeFromCart";
+import markBookInCart from "../actions/shop/markBookInCart";
+import markBookNotInCart from "../actions/shop/markBookNotInCart";
+import addToCart from "../actions/shop/addToCart";
 import { withRouter } from 'react-router-dom';
 
 
@@ -11,7 +15,11 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => {
     return ({
-        fetchBooks: () => dispatch(fetchBooks())
+        fetchBooks: () => dispatch(fetchBooks()),
+        removeFromCart: (book) => dispatch(removeFromCart(book)),
+        addToCart: (book) => dispatch(addToCart(book)),
+        markBookInCart: (book) => dispatch(markBookInCart(book)),
+        markBookNotInCart: (book) => dispatch(markBookNotInCart(book))
     })
 };
 

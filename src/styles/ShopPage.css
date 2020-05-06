@@ -17,12 +17,12 @@
 }
 
 .card-media{
-    height: 140px;
+    height: 200px;
 }
 
 .card-content {
-    height: 250px;
-    width: 345px;
+    height: 170px;
+    width: 300px;
 }
 
 @media (max-width: 450px) {
@@ -53,4 +53,15 @@
     padding: 40px;
     margin: 40px;
     background-color: rgba(0, 0, 0, .9)
+}
+
+.price-tag {
+    float: right;
+    padding-top: 7px;
+    font-weight: bold;
+}
+
+.card-bottom {
+    padding-top: 10px;
+    border-top: solid black;
 }

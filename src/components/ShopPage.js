@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import '../styles/ShopPage.css';
-import { Card, Paper, Grid, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
+import { Card, Grid, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
 import Spinner from "./Spinner";
 
 
+const add_delete_cart = (book, props) => {
+    if (book.in_cart) {
+        return (<Button size="large" className="add-cart" onClick={() => {
+            props.removeFromCart(book);
+            props.markBookNotInCart(book);
+        }}>Remove from Cart</Button>)
+    } else {
+        return (<Button size="large" color="primary" className="add-cart" onClick={() => {
+            props.addToCart(book);
+            props.markBookInCart(book);
+        }}>Add to Cart</Button>)
+    }
+}
 
 class ShopPage extends Component {
     componentDidMount() {
@@ -34,7 +47,16 @@ class ShopPage extends Component {
                                     </CardContent>
 
                                     <CardActions>
-                                        <Button size="large" color="primary" className="add-cart">Add to Cart</Button>
+                                        <div className="container card-bottom">
+                                            <div className="row">
+                                                <div className="col-10">
+                                                    {add_delete_cart(book, this.props)}
+                                                </div>
+                                                <div className="col-2">
+                                                    <p className="price-tag">$5</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </CardActions>
                                 </Card>
                             </Grid>

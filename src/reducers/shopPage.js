@@ -18,12 +18,29 @@ const shopPage = (state = {
             };
 
         case "FETCH_COMPLETED":
-            console.log("fetch complete");
             return {
                 ...state,
                 fetch_started: false,
                 fetch_completed: true,
                 books: action.books
+            };
+
+        case "MARK_BOOK_IN_CART":
+            return {
+                ...state,
+                books: state.books.map(
+                    (book) => book.isbn === action.book.isbn ? { ...book, in_cart: true }
+                        : book
+                )
+            }
+
+        case "MARK_BOOK_NOT_IN_CART":
+            return {
+                ...state,
+                books: state.books.map(
+                    (book) => book.isbn === action.book.isbn ? { ...book, in_cart: false }
+                        : book
+                )
             };
 
         default:
