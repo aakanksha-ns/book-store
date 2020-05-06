@@ -1,6 +1,7 @@
 
 .cart-section {
     min-height: 70%;
+    padding: 30px;
 }
 
 .cart-table-header {
@@ -95,4 +96,43 @@
 
 .table td, .table th { 
     vertical-align: middle;
+}
+
+.empty-cart-section {
+  background-color: black;
+  opacity: 0.8;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-shop {
+  font-weight: bold;
+  width: 500px;
+  margin: 60px;
+}
+
+.emptyCart-text{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: wheat;
+  padding-top: 40px;
+}
+
+.emptyCart-desc {
+  font-size: 15px;
+  color:white;
+  text-align: center;
+}
+
+.empty-cart {
+  padding-top: 50px;
+  height: 350px;
+  width: 300px;
 }

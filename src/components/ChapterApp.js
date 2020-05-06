@@ -5,6 +5,7 @@ import RegisterPage from "../containers/Register";
 import LoginPage from "../containers/Login";
 import ShopPage from "../containers/ShopPage";
 import Cart from "../containers/Cart";
+import Checkout from "../containers/Checkout";
 import '../styles/ChapterApp.css';
 import {
     BrowserRouter as Router,
@@ -23,6 +24,7 @@ const ChapterApp = () => {
                 <Route path="/login" exact component={LoginPage} />
                 <Route path="/shop" exact component={ShopPage} />
                 <Route path="/cart" exact component={Cart} />
+                <Route path="/checkout" exact component={Checkout} />
             </Switch>
             <Footer />
         </Router >
