@@ -43,6 +43,14 @@ const shopPage = (state = {
                 )
             };
 
+        case "MARK_ALL_BOOKS_NOT_IN_CART":
+            return {
+                ...state,
+                books: state.books.map(
+                    (book) => { return ({ ...book, in_cart: false }) }
+                )
+            };
+
         default:
             return state;
     }

@@ -1,0 +1,98 @@
+
+.cart-section {
+    min-height: 70%;
+}
+
+.cart-table-header {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cart-table {
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.cart-table-body {
+    color: white;
+}
+
+
+.counter {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .value-button-decrease {
+      background-color: red;
+  }
+
+  .value-button-increase {
+    background-color: green;
+}
+  
+  .value-button:hover {
+    cursor: pointer;
+  }
+  
+  .counter #decrease {
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .counter #increase {
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .counter #input-wrap {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  
+
+.cart-image {
+    height: 100px;
+    width: 100px;
+}
+
+.padding-top {
+    padding-top: 50px;
+}
+
+.min-width {
+    min-width: 200px;
+}
+
+.table td, .table th { 
+    vertical-align: middle;
+}

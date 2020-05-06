@@ -1,19 +1,35 @@
 const cart = (state = {
-    is_empty: true,
     items: []
 }, action) => {
     switch (action.type) {
         case "ADD_TO_CART":
-            console.log("im here adding" + action.book);
             return {
                 ...state,
                 items: [...state.items, action.book]
             };
 
         case "REMOVE_FROM_CART":
-            console.log("im here removing");
             return {
-                ...state
+                ...state,
+                items: state.items.filter(item => item.isbn !== action.book.isbn)
+            };
+
+        case "INCREASE_QUANTITY":
+            return {
+                ...state,
+                items: state.items.map(
+                    (book) => book.isbn === action.book.isbn ? { ...book, quantity: book.quantity + 1 }
+                        : book
+                )
+            };
+
+        case "DECREASE_QUANTITY":
+            return {
+                ...state,
+                items: state.items.map(
+                    (book) => book.isbn === action.book.isbn ? { ...book, quantity: book.quantity - 1 }
+                        : book
+                )
             };
 
         default:

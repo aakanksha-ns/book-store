@@ -49,11 +49,11 @@ class ShopPage extends Component {
                                     <CardActions>
                                         <div className="container card-bottom">
                                             <div className="row">
-                                                <div className="col-10">
+                                                <div className="col-9">
                                                     {add_delete_cart(book, this.props)}
                                                 </div>
-                                                <div className="col-2">
-                                                    <p className="price-tag">$5</p>
+                                                <div className="col-3">
+                                                    <p className="price-tag">$ {book.price}</p>
                                                 </div>
                                             </div>
                                         </div>
