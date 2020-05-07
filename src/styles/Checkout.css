@@ -1,0 +1,43 @@
+.checkout-section {
+    margin: 40px;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.order-placed {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: wheat;
+    padding-top: 40px;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+}
+
+.thank-you {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.order-details {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    opacity: 1;
+}
+
+.place-new-order {
+    font-weight: bold;
+    width: 500px;
+    margin: 60px;
+}
